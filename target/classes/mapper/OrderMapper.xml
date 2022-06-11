@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="priv.anna.reggie.mapper.OrderMapper">
+
+    <insert id="save" parameterType="priv.anna.reggie.domain.Orders">
+        INSERT INTO orders VALUES(#{id},#{number},#{status},#{userId},#{addressBookId},
+        #{orderTime},#{checkoutTime},#{payMethod},#{amount},#{remark},#{phone},#{address},
+        #{userName},#{consignee})
+    </insert>
+
+    <select id="findAll" resultType="priv.anna.reggie.domain.Orders">
+        select * from orders
+    </select>
+
+    <select id="findByNumber" parameterType="string" resultType="priv.anna.reggie.domain.Orders">
+        select * from orders where number = #{number}
+    </select>
+
+    <select id="findByUserId" parameterType="long" resultType="priv.anna.reggie.domain.Orders">
+        SELECT * FROM orders WHERE user_id = #{userId}
+    </select>
+
+</mapper>

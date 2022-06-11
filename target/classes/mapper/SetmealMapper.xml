@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="priv.anna.reggie.mapper.SetmealMapper">
+
+    <select id="findCountByCategoryId" resultType="int"  parameterType="long">
+        SELECT COUNT(*) FROM setmeal WHERE category_id=#{categoryId}
+    </select>
+
+    <insert id="save" parameterType="priv.anna.reggie.dto.SetmealDto">
+        INSERT INTO setmeal VALUES(#{id},#{categoryId},#{name},#{price},#{status},#{code},
+        #{description},#{image},#{createTime},#{updateTime},#{createUser},#{updateUser},0)
+    </insert>
+
+    <select id="findIdByName" resultType="long" parameterType="string">
+        SELECT id FROM setmeal WHERE NAME=#{name}
+    </select>
+
+    <select id="findByName" resultType="priv.anna.reggie.dto.SetmealDto" parameterType="string">
+        SELECT * FROM setmeal WHERE NAME like '%${name}%'
+    </select>
+
+    <select id="findAll" resultType="priv.anna.reggie.dto.SetmealDto">
+        SELECT * FROM setmeal
+    </select>
+
+    <update id="update" parameterType="priv.anna.reggie.dto.SetmealDto">
+        UPDATE setmeal
+        <set>
+            <if test="categoryId!=null">
+                category_id = #{categoryId},
+            </if>
+            <if test="name!=null">
+                name = #{name},
+            </if>
+            <if test="price!=null">
+                price = #{price},
+            </if>
+            <if test="status!=null">
+                status = #{status},
+            </if>
+            <if test="code!=null">
+                code = #{code},
+            </if>
+            <if test="description!=null">
+                description = #{description},
+            </if>
+            <if test="image!=null">
+                image = #{image},
+            </if>
+            <if test="updateTime!=null">
+                update_time = #{updateTime},
+            </if>
+            <if test="updateUser!=null">
+                update_user = #{updateUser}
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <select id="findById" resultType="priv.anna.reggie.dto.SetmealDto" parameterType="long">
+        SELECT * FROM setmeal WHERE id=#{id}
+    </select>
+
+    <delete id="delete" parameterType="long">
+        DELETE FROM setmeal WHERE id=#{id}
+    </delete>
+
+    <select id="findStatus" parameterType="long" resultType="int">
+        SELECT STATUS FROM setmeal WHERE id=#{id}
+    </select>
+
+    <update id="startSale" parameterType="Long">
+        update setmeal set status = 1 where id = #{id}
+    </update>
+
+    <update id="stopSale" parameterType="long">
+        update setmeal set status = 0 where id = #{id}
+    </update>
+
+    <select id="findByCategoryId" parameterType="long" resultType="priv.anna.reggie.dto.SetmealDto">
+        SELECT * FROM setmeal WHERE category_id = #{categoryId} AND STATUS = 1
+    </select>
+</mapper>

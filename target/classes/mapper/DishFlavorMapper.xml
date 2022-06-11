@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="priv.anna.reggie.mapper.DishFlavorMapper">
+
+    <insert id="saveFlavor" parameterType="priv.anna.reggie.domain.DishFlavor">
+        INSERT INTO dish_flavor VALUES (#{id},#{dishId},#{name},#{value},
+        #{createTime},#{updateTime},#{createUser},#{updateUser},0)
+    </insert>
+
+    <select id="findByDishId" resultType="priv.anna.reggie.domain.DishFlavor" parameterType="long">
+        SELECT * FROM dish_flavor WHERE dish_id = #{id}
+    </select>
+
+    <delete id="deleteById" parameterType="long">
+        delete from dish_flavor where dish_id = #{dishId}
+    </delete>
+
+</mapper>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="priv.anna.reggie.mapper.EmployeeMapper">
+
+    <select id="findAll" resultType="priv.anna.reggie.domain.Employee">
+        SELECT * FROM employee
+    </select>
+
+    <select id="findByUsername" resultType="priv.anna.reggie.domain.Employee" parameterType="java.lang.String">
+        SELECT * FROM employee WHERE username = #{username}
+    </select>
+
+    <insert id="saveEmployee" parameterType="priv.anna.reggie.domain.Employee">
+        INSERT INTO employee VALUES (#{id} ,#{name},#{username},#{password},#{phone},#{sex},#{idNumber},1,#{createTime},#{updateTime},#{createUser},#{updateUser})
+    </insert>
+
+    <!--**在mapper.xml配置文件中添加"%"通配符，但是需要用单引号将其包裹住，但是用单引号裹住之后#{}就无法被识别，要改成${}这种拼接字符串的形式。-->
+    <select id="findByName" resultType="priv.anna.reggie.domain.Employee" parameterType="string">
+        SELECT * FROM employee WHERE NAME like '%${name}%'
+    </select>
+
+<!--    <update id="updateById" parameterType="priv.anna.reggie.domain.Employee">-->
+<!--        UPDATE employee SET STATUS = #{status} WHERE  id = #{id}-->
+<!--    </update>-->
+
+    <update id="updateById" parameterType="priv.anna.reggie.domain.Employee">
+        UPDATE employee
+        <set>
+            <if test="status!=null">
+                STATUS = #{status},
+            </if>
+            <if test="username!=null">
+                username = #{username},
+            </if>
+            <if test="name!=null">
+                name = #{name},
+            </if>
+            <if test="phone!=null">
+                phone = #{phone},
+            </if>
+            <if test="sex!=null">
+                sex = #{sex},
+            </if>
+            <if test="username!=null">
+                username = #{username},
+            </if>
+            <if test="idNumber!=null">
+                id_number  = #{idNumber},
+            </if>
+            <if test="updateTime!=null">
+                update_time = #{updateTime},
+            </if>
+            <if test="updateUser!=null">
+                update_user = #{updateUser}
+            </if>
+        </set>
+        WHERE  id = #{id}
+    </update>
+
+    <select id="findById" resultType="priv.anna.reggie.domain.Employee" parameterType="long">
+        SELECT * FROM employee WHERE id = #{id}
+    </select>
+
+</mapper>

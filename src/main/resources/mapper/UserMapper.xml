@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="priv.anna.reggie.mapper.UserMapper">
+
+    <select id="findUserByPhone" parameterType="string" resultType="priv.anna.reggie.domain.User">
+        SELECT * FROM USER WHERE phone = #{phone}
+    </select>
+
+    <insert id="save" parameterType="priv.anna.reggie.domain.User">
+        INSERT INTO USER VALUES (#{id},#{name},#{phone},#{sex},#{idNumber},#{avatar},#{status})
+    </insert>
+
+    <select id="findById" resultType="priv.anna.reggie.domain.User" parameterType="long">
+        SELECT * FROM USER WHERE id = #{id}
+    </select>
+
+
+
+</mapper>

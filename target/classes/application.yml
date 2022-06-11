@@ -1,0 +1,45 @@
+server:
+  port: 8080
+spring:
+  application:
+    #应用的名称，可写可不写
+    name: reggie_take_out
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/reggie?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+      username: root
+      password: root
+
+
+#mybatis-plus:
+#  configuration:
+#    #在映射实体或者属性时，将数据库中表名和字段名中的下划线去掉，按照驼峰命名法映射
+#    #例如： 表名address_book 映射到 类名AddressBook
+#    map-underscore-to-camel-case: true
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#  global-config:
+#    db-config:
+#      id-type: ASSIGN_ID
+
+
+
+
+## 该配置节点为独立的节点，有很多同学容易将这个配置放在spring的节点下，导致配置无法被识别
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  #注意：一定要对应mapper映射xml文件的所在路径
+  #type-aliases-package: priv.anna.reggie.domain.Employee  # 注意：对应实体类的路径
+  type-aliases-package: priv.anna.reggie.bean  #配置别名映射
+  configuration:
+    map-underscore-to-camel-case: true  #驼峰命名
+
+#配置pagehelper分页插件
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countsql
+
+#自定义文件上传后转存的位置
+reggie:
+  path: E:\MyProject\RuiJi_TakeawayApp\img\

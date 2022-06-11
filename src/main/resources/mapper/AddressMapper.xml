@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="priv.anna.reggie.mapper.AddressBookMapper">
+
+    <insert id="save" parameterType="priv.anna.reggie.domain.AddressBook">
+        INSERT INTO address_book VALUES(#{id},#{userId},#{consignee},#{sex},#{phone},#{provinceCode},
+        #{provinceName},#{cityCode},#{cityName},#{districtCode},#{districtName},
+        #{detail},#{label},#{isDefault},#{createTime},#{updateTime},#{createUser},
+        #{updateUser},#{isDeleted})
+    </insert>
+
+    <update id="setNonDefault" parameterType="priv.anna.reggie.domain.AddressBook">
+        UPDATE address_book SET is_default = 0 WHERE user_id = #{userId}
+    </update>
+
+    <update id="update" parameterType="priv.anna.reggie.domain.AddressBook">
+        update address_book
+        <set>
+            <if test="userId!=null">
+                user_id = #{userId},
+            </if>
+            <if test="consignee!=null">
+                consignee = #{consignee},
+            </if>
+            <if test="phone!=null">
+                phone = #{phone},
+            </if>
+            <if test="sex!=null">
+                sex = #{sex}
+            </if>
+            <if test="provinceCode!=null">
+                province_code = #{provinceCode}
+            </if>
+            <if test="provinceName!=null">
+                province_name = #{provinceName}
+            </if>
+            <if test="cityCode!=null">
+                city_code = #{cityCode}
+            </if>
+            <if test="cityName!=null">
+                city_name = #{cityName}
+            </if>
+            <if test="districtCode!=null">
+                district_code = #{districtCode}
+            </if>
+            <if test="districtName!=null">
+                district_name = #{districtName},
+            </if>
+            <if test="detail!=null">
+                detail = #{detail},
+            </if>
+            <if test="label!=null">
+                label = #{label},
+            </if>
+            <if test="isDefault!=null">
+                is_default = #{isDefault},
+            </if>
+            <if test="updateTime!=null">
+                update_time = #{updateTime},
+            </if>
+            <if test="updateUser!=null">
+                update_user = #{updateUser},
+            </if>
+            <if test="isDeleted!=null">
+                is_deleted = #{isDeleted},
+            </if>
+        </set>
+        where id=#{id}
+    </update>
+
+
+    <select id="findById" parameterType="long" resultType="priv.anna.reggie.domain.AddressBook">
+        select * from address_book where id = #{id}
+    </select>
+
+    <select id="findDefault" parameterType="long" resultType="priv.anna.reggie.domain.AddressBook">
+         select * from address_book where user_id = #{userId} and is_default = 1
+    </select>
+
+    <select id="findAllByUserId" parameterType="priv.anna.reggie.domain.AddressBook" resultType="priv.anna.reggie.domain.AddressBook">
+        select * from address_book where user_id = #{userId} order by update_time desc
+    </select>
+
+    <delete id="delete" parameterType="long">
+        DELETE FROM address_book WHERE id=#{id}
+    </delete>
+
+
+</mapper>

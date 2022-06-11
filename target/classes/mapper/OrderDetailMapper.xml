@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="priv.anna.reggie.mapper.OrderDetailMapper">
+
+    <insert id="save" parameterType="priv.anna.reggie.domain.OrderDetail">
+       INSERT INTO order_detail values(#{id},#{name},#{image},#{orderId},#{dishId},
+       #{setmealId},#{dishFlavor},#{number},#{amount})
+    </insert>
+
+
+</mapper>

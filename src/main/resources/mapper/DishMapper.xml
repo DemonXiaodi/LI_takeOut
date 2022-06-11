@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="priv.anna.reggie.mapper.DishMapper">
+
+    <select id="findCountByCategoryId" resultType="int"  parameterType="long">
+        SELECT COUNT(*) FROM dish WHERE category_id=#{categoryId}
+    </select>
+
+
+    <insert id="saveDish" parameterType="priv.anna.reggie.dto.DishDto">
+        INSERT INTO dish VALUES (#{id},#{name},#{categoryId},#{price},#{code},#{image},#{description},
+        #{status},#{sort},#{createTime},#{updateTime},#{createUser},#{updateUser},0)
+    </insert>
+
+    <select id="findIdByName" parameterType="string" resultType="long">
+        SELECT id FROM dish WHERE NAME=#{name}
+    </select>
+
+    <select id="findAll" resultType="priv.anna.reggie.domain.Dish">
+        SELECT * FROM dish
+    </select>
+
+    <select id="findByName" resultType="priv.anna.reggie.domain.Dish" parameterType="string">
+         SELECT * FROM dish  WHERE NAME like '%${name}%'
+    </select>
+
+    <select id="findById" resultType="priv.anna.reggie.dto.DishDto" parameterType="long">
+        SELECT * FROM dish WHERE id=#{id}
+    </select>
+
+    <update id="update" parameterType="priv.anna.reggie.dto.DishDto">
+        UPDATE dish
+        <set>
+            <if test="name!=null">
+                name = #{name},
+            </if>
+            <if test="categoryId!=null">
+                category_id = #{categoryId},
+            </if>
+            <if test="price!=null">
+                price = #{price},
+            </if>
+            <if test="code!=null">
+                code = #{code},
+            </if>
+            <if test="image!=null">
+                image = #{image},
+            </if>
+            <if test="description!=null">
+                description = #{description},
+            </if>
+            <if test="status!=null">
+                status = #{status},
+            </if>
+            <if test="sort!=null">
+                sort = #{sort},
+            </if>
+            <if test="updateTime!=null">
+                update_time = #{updateTime},
+            </if>
+            <if test="updateUser!=null">
+                update_user = #{updateUser}
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <select id="findBy" resultType="priv.anna.reggie.domain.Dish" parameterType="priv.anna.reggie.domain.Dish">
+        select * from dish where status = 1
+            <if test="id!=null">
+                and id=#{id}
+            </if>
+            <if test="name!=null">
+                and name = #{name}
+            </if>
+            <if test="categoryId!=null">
+                and category_id = #{categoryId}
+            </if>
+            <if test="price!=null">
+                and price = #{price}
+            </if>
+            <if test="code!=null">
+                and code = #{code}
+            </if>
+            <if test="image!=null">
+                and image = #{image}
+            </if>
+            <if test="description!=null">
+                and description = #{description}
+            </if>
+            <if test="sort!=null">
+                and  sort = #{sort}
+            </if>
+        order by sort
+    </select>
+
+    <select id="findStatus" parameterType="long" resultType="int">
+        SELECT STATUS FROM dish WHERE id=#{id}
+    </select>
+
+    <delete id="delete" parameterType="long">
+        DELETE FROM dish WHERE id=#{id}
+    </delete>
+
+    <update id="startSale" parameterType="long">
+         UPDATE dish set status=1 where id = #{id}
+    </update>
+
+    <update id="stopSale" parameterType="long">
+        UPDATE dish set status=0 where id = #{id}
+    </update>
+
+</mapper>
