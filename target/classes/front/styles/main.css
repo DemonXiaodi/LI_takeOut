@@ -246,7 +246,7 @@
   width: 64rem;
   height: 24rem;
   opacity: 1;
-  background: #ffc200;
+  background: #83c6c2;
   border-radius: 12rem;
   font-size: 12rem;
   font-family: PingFangSC, PingFangSC-Regular;
@@ -331,7 +331,7 @@
 }
 #main .divCart .btnSubmitActive {
   color: #333333;
-  background: #ffc200;
+  background: #2bced1;
 }
 
 #main .divCart .divGoodsNum {
