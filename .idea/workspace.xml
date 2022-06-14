@@ -1,46 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10c31ebf-26b4-426d-8e62-ddeb9daedfe5" name="默认的" comment="瑞吉外卖，没有优化">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/front/images/add2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/front/images/add3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/front/images/cart2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/front/images/cart_active2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/front/images/location2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/front/images/logo2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/front/images/logo3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/front/images/mainBg2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/front/images/money2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/front/images/subtract2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/front/images/subtract3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/front/images/time2.png" afterDir="false" />
+    <list default="true" id="10c31ebf-26b4-426d-8e62-ddeb9daedfe5" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/add.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/images/add.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/cart.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/images/cart.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/cart_active.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/images/cart_active.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/location.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/images/location.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/mainBg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/images/mainBg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/money.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/images/money.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/subtract.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/images/subtract.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/front/images/time.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/images/time.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/front/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/front/styles/add-order.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/styles/add-order.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/front/styles/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/styles/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/front/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/styles/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/front/images/add.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/front/images/add.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/front/images/cart.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/front/images/cart.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/front/images/cart_active.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/front/images/cart_active.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/front/images/location.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/front/images/location.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/front/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/front/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/front/images/mainBg.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/front/images/mainBg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/front/images/money.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/front/images/money.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/front/images/subtract.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/front/images/subtract.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/front/images/time.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/front/images/time.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/front/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/front/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/front/styles/add-order.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/front/styles/add-order.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/front/styles/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/front/styles/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/front/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/front/styles/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,7 +197,7 @@
       <workItem from="1653391766509" duration="76073000" />
       <workItem from="1654517475753" duration="7568000" />
       <workItem from="1654932455727" duration="494000" />
-      <workItem from="1654933008415" duration="9866000" />
+      <workItem from="1654933008415" duration="11707000" />
     </task>
     <task id="LOCAL-00001" summary="瑞吉外卖，没有优化">
       <created>1654931179569</created>
@@ -244,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654931179569</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="瑞吉外卖，没有优化">
+      <created>1655023369854</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655023369854</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,46 +245,46 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="657" y="269" key="#通知/62.0.1474.864@62.0.1474.864" timestamp="1654931905056" />
-    <state x="270" y="0" key="CommitChangelistDialog2" timestamp="1654933781636">
+    <state x="270" y="0" key="CommitChangelistDialog2" timestamp="1655023368216">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="270" y="0" key="CommitChangelistDialog2/62.0.1474.864@62.0.1474.864" timestamp="1654933781636" />
+    <state x="270" y="0" key="CommitChangelistDialog2/62.0.1474.864@62.0.1474.864" timestamp="1655023368216" />
     <state x="527" y="130" key="FileChooserDialogImpl" timestamp="1654930881738">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="527" y="130" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1654930881738" />
-    <state width="1425" height="457" key="GridCell.Tab.0.bottom" timestamp="1655018277524">
+    <state width="1425" height="457" key="GridCell.Tab.0.bottom" timestamp="1655023369385">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1425" height="457" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1655018277524" />
-    <state width="1425" height="457" key="GridCell.Tab.0.center" timestamp="1655018277524">
+    <state width="1425" height="457" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1655023369385" />
+    <state width="1425" height="457" key="GridCell.Tab.0.center" timestamp="1655023369385">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1425" height="457" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1655018277524" />
-    <state width="1425" height="457" key="GridCell.Tab.0.left" timestamp="1655018277524">
+    <state width="1425" height="457" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1655023369385" />
+    <state width="1425" height="457" key="GridCell.Tab.0.left" timestamp="1655023369385">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1425" height="457" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1655018277524" />
-    <state width="1425" height="457" key="GridCell.Tab.0.right" timestamp="1655018277524">
+    <state width="1425" height="457" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1655023369385" />
+    <state width="1425" height="457" key="GridCell.Tab.0.right" timestamp="1655023369385">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1425" height="457" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1655018277524" />
-    <state width="1425" height="457" key="GridCell.Tab.1.bottom" timestamp="1655018277524">
+    <state width="1425" height="457" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1655023369385" />
+    <state width="1425" height="457" key="GridCell.Tab.1.bottom" timestamp="1655023369386">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1425" height="457" key="GridCell.Tab.1.bottom/62.0.1474.864@62.0.1474.864" timestamp="1655018277524" />
-    <state width="1425" height="457" key="GridCell.Tab.1.center" timestamp="1655018277524">
+    <state width="1425" height="457" key="GridCell.Tab.1.bottom/62.0.1474.864@62.0.1474.864" timestamp="1655023369386" />
+    <state width="1425" height="457" key="GridCell.Tab.1.center" timestamp="1655023369386">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1425" height="457" key="GridCell.Tab.1.center/62.0.1474.864@62.0.1474.864" timestamp="1655018277524" />
-    <state width="1425" height="457" key="GridCell.Tab.1.left" timestamp="1655018277524">
+    <state width="1425" height="457" key="GridCell.Tab.1.center/62.0.1474.864@62.0.1474.864" timestamp="1655023369386" />
+    <state width="1425" height="457" key="GridCell.Tab.1.left" timestamp="1655023369386">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1425" height="457" key="GridCell.Tab.1.left/62.0.1474.864@62.0.1474.864" timestamp="1655018277524" />
-    <state width="1425" height="457" key="GridCell.Tab.1.right" timestamp="1655018277524">
+    <state width="1425" height="457" key="GridCell.Tab.1.left/62.0.1474.864@62.0.1474.864" timestamp="1655023369386" />
+    <state width="1425" height="457" key="GridCell.Tab.1.right" timestamp="1655023369386">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1425" height="457" key="GridCell.Tab.1.right/62.0.1474.864@62.0.1474.864" timestamp="1655018277524" />
+    <state width="1425" height="457" key="GridCell.Tab.1.right/62.0.1474.864@62.0.1474.864" timestamp="1655023369386" />
     <state width="1425" height="244" key="GridCell.Tab.2.bottom" timestamp="1654513598912">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
@@ -344,10 +313,11 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="454" y="111" width="675" height="655" key="StructurePopup/62.0.1474.864@62.0.1474.864" timestamp="1655018073706" />
-    <state x="292" y="102" key="Vcs.Push.Dialog.v2" timestamp="1654933791098">
-      <screen x="62" y="0" width="1474" height="864" />
+    <state x="298" y="102" key="Vcs.Push.Dialog.v2" timestamp="1655212479920">
+      <screen x="69" y="0" width="1467" height="864" />
     </state>
     <state x="292" y="102" key="Vcs.Push.Dialog.v2/62.0.1474.864@62.0.1474.864" timestamp="1654933791098" />
+    <state x="298" y="102" key="Vcs.Push.Dialog.v2/69.0.1467.864@69.0.1467.864" timestamp="1655212479920" />
     <state x="573" y="327" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1654933772768">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
