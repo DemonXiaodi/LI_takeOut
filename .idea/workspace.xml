@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="10c31ebf-26b4-426d-8e62-ddeb9daedfe5" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -197,7 +215,7 @@
       <workItem from="1653391766509" duration="76073000" />
       <workItem from="1654517475753" duration="7568000" />
       <workItem from="1654932455727" duration="494000" />
-      <workItem from="1654933008415" duration="11707000" />
+      <workItem from="1654933008415" duration="14888000" />
     </task>
     <task id="LOCAL-00001" summary="瑞吉外卖，没有优化">
       <created>1654931179569</created>
@@ -213,11 +231,54 @@
       <option name="project" value="LOCAL" />
       <updated>1655023369854</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="瑞吉外卖，没有优化">
+      <created>1655212488782</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655212488782</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -245,14 +306,19 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="657" y="269" key="#通知/62.0.1474.864@62.0.1474.864" timestamp="1654931905056" />
-    <state x="270" y="0" key="CommitChangelistDialog2" timestamp="1655023368216">
-      <screen x="62" y="0" width="1474" height="864" />
+    <state x="276" y="0" key="CommitChangelistDialog2" timestamp="1655212487678">
+      <screen x="69" y="0" width="1467" height="864" />
     </state>
     <state x="270" y="0" key="CommitChangelistDialog2/62.0.1474.864@62.0.1474.864" timestamp="1655023368216" />
+    <state x="276" y="0" key="CommitChangelistDialog2/69.0.1467.864@69.0.1467.864" timestamp="1655212487678" />
     <state x="527" y="130" key="FileChooserDialogImpl" timestamp="1654930881738">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="527" y="130" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1654930881738" />
+    <state x="582" y="336" key="Github.CreateGistDialog" timestamp="1655214594517">
+      <screen x="69" y="0" width="1467" height="864" />
+    </state>
+    <state x="582" y="336" key="Github.CreateGistDialog/69.0.1467.864@69.0.1467.864" timestamp="1655214594517" />
     <state width="1425" height="457" key="GridCell.Tab.0.bottom" timestamp="1655023369385">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
@@ -313,23 +379,29 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="454" y="111" width="675" height="655" key="StructurePopup/62.0.1474.864@62.0.1474.864" timestamp="1655018073706" />
-    <state x="298" y="102" key="Vcs.Push.Dialog.v2" timestamp="1655212479920">
+    <state x="298" y="102" key="Vcs.Push.Dialog.v2" timestamp="1655215666657">
       <screen x="69" y="0" width="1467" height="864" />
     </state>
     <state x="292" y="102" key="Vcs.Push.Dialog.v2/62.0.1474.864@62.0.1474.864" timestamp="1654933791098" />
-    <state x="298" y="102" key="Vcs.Push.Dialog.v2/69.0.1467.864@69.0.1467.864" timestamp="1655212479920" />
-    <state x="573" y="327" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1654933772768">
-      <screen x="62" y="0" width="1474" height="864" />
+    <state x="298" y="102" key="Vcs.Push.Dialog.v2/69.0.1467.864@69.0.1467.864" timestamp="1655215666657" />
+    <state x="578" y="327" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1655213422378">
+      <screen x="69" y="0" width="1467" height="864" />
     </state>
     <state x="573" y="327" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/62.0.1474.864@62.0.1474.864" timestamp="1654933772768" />
+    <state x="578" y="327" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/69.0.1467.864@69.0.1467.864" timestamp="1655213422378" />
     <state x="0" y="0" width="752" height="864" key="find.popup" timestamp="1653451642190">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="0" y="0" width="752" height="864" key="find.popup/62.0.1474.864@62.0.1474.864" timestamp="1653451642190" />
-    <state x="461" y="180" key="git4idea.merge.GitPullDialog" timestamp="1654931961997">
-      <screen x="62" y="0" width="1474" height="864" />
+    <state x="466" y="180" key="git4idea.merge.GitPullDialog" timestamp="1655213317948">
+      <screen x="69" y="0" width="1467" height="864" />
     </state>
     <state x="461" y="180" key="git4idea.merge.GitPullDialog/62.0.1474.864@62.0.1474.864" timestamp="1654931961997" />
+    <state x="466" y="180" key="git4idea.merge.GitPullDialog/69.0.1467.864@69.0.1467.864" timestamp="1655213317948" />
+    <state x="503" y="313" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1655215424928">
+      <screen x="69" y="0" width="1467" height="864" />
+    </state>
+    <state x="503" y="313" key="git4idea.remote.GitConfigureRemotesDialog/69.0.1467.864@69.0.1467.864" timestamp="1655215424928" />
     <state x="177" y="45" key="new project wizard" timestamp="1654760159869">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
